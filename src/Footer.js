@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -29,13 +29,13 @@ const Footer = forwardRef((props, ref) => {
                 Socials
             </Typography>
             <Box alignItems="center" justifyContent="center">
-            <Link href="https://www.linkedin.com/in/mark-christan-parro-4a4a5922a/" underline="none" target="_blank" rel="noopener"><LinkedInIcon fontSize="large" color="primary"></LinkedInIcon> </Link>
+                <Link href="https://www.linkedin.com/in/mark-christan-parro-4a4a5922a/" underline="none" target="_blank" rel="noopener"><LinkedInIcon fontSize="large" color="primary"></LinkedInIcon> </Link>
                 <Link href="https://github.com/markscodingexperience" underline="none" target="_blank" rel="noopener"><GitHubIcon fontSize="large"></GitHubIcon> </Link>
                 <Link href="https://www.facebook.com/loki.prime.39" underline="none" target="_blank" rel="noopener"><FacebookIcon fontSize="large" color="primary"></FacebookIcon></Link>
             </Box>
             <Box 
                 component="img"
-                src="./images/pic.jpg"
+                src={`${process.env.PUBLIC_URL}/images/pic.jpg`}
                 alt="Profile Picture"
                 sx={{
                     width: '40%',

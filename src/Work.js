@@ -8,7 +8,7 @@ import { useMediaQuery } from '@mui/material';
 const itemData = [
     {
 
-        img: "./images/epetcare.png",
+        img: `${process.env.PUBLIC_URL}/images/epetcare.png`,
         url: "https://youtu.be/zt6UeZ5PiRE?si=UD4wbhKzM8J7E8_F",
         title: "e-PetCare System",
         note: "This is a project I did complete full stack with CodeIgniter(PHP), Bootstrap, MySQL, Javascript, and JQuery. Client-side has the option to choose from pet-based businesses to cater to their pets needs. While Business-side can put their clinics on the app and show their products and services to their potential customers. Used Stripe API for payment, Admin dashboard for products, pets, and services rendered for sales."
@@ -16,7 +16,7 @@ const itemData = [
     },
     {
 
-        img: "./images/calculator mockup.jpg",
+        img: `${process.env.PUBLIC_URL}/images/calculator mockup.jpg`,
         url: "",
         title: "Calculator",
         note: "Made with HTML, CSS, and Javascript. A basic calculator to calculate multiple inputs. Used a Math API to calculate"
@@ -24,14 +24,14 @@ const itemData = [
     },
     {
 
-        img: "./images/weather.png",
+        img: `${process.env.PUBLIC_URL}/images/weather.png`,
         url: "",
         title: "Weather App",
         note: "A Weather app to check the weather, the humidity and air speed of any city in the world. Using an opensource weather API to get the data. Made with HTML, CSS, and Javascript"
 
     },
     {
-        img: "./images/note.png",
+        img: `${process.env.PUBLIC_URL}/images/note.png`,
         url: "",
         title: "Notes App",
         note: "My take on a note app to jot down your notes as colorful cards and organize them via tags, made with ReactJS, HTML, CSS"
